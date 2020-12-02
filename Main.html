@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hospitals</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="c3.js"></script>
+    <script src="d3.js"></script>
+    <script src="script.js"></script>
+
+    <script type="text/html" id="layout">
+      <div class = "outputs">
+        <h3>{{facility_name}}</h3>
+        <h5>{{facility_type}}</h5>
+        <p> {{location_1_address}} {{location_1_city}} </p> 
+        <p> {{location_1_state}} {{location_1_zip}} </p>
+        <div id="footer">
+          <a href = "https://www.mapquestapi.com/staticmap/v5/map?key=aJl1fy1cclDij43e7huApGjnhHi4mhlX&locations={{location_1.coordinates.1}},{{location_1.coordinates.0}}&zoom=14&size=@2x" id="mapB"> Map </a>
+          <input type="button" id="mapB" value="Map it" onclick="DrawMap( {{location_1.coordinates.1}},{{location_1.coordinates.0}} )">
+		    </div>
+      </div>
+    </script>
+  
+  </head>
+
+  <body onload="getData()">
+    <div class="jumbotron text-center">
+      <input type = "text" id="searchName" placeholder="Search for Hospitals">
+      <input type="button" id="searchB" value="Display Info" onclick="showInfo()"><br>
+      <br>
+      <a href="index.html" id="homeB2">Go Back Home</a>
+      <a href="Main.html" id="homeB2">Refresh</a>
+    </div>
+    <div id="myChart1"></div>
+    <div id="myChart2"></div>
+    <div id="MapQuest" id = "panel" class="panel-default" style="width:100%;display:inline-block;"></div>
+    <br><hr>
+    <div id="output"></div>
+  </body>
+</html>

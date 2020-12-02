@@ -1,0 +1,226 @@
+#footer{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+#homeB {
+  background-color: #34b8ed;
+  border: 3px solid #2fa8d8;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#homeB:hover{
+  background-color: #2fa8d8;
+  border: 3px solid #2fa8d8;
+}
+#homeB2 {
+  background-color: #34b8ed;
+  border: 3px solid #2fa8d8;
+  border-radius: 5px;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  width: 150px;
+  cursor: pointer;
+}
+#homeB2:hover{
+  background-color: #2fa8d8;
+  border: 3px solid #2fa8d8;
+}
+#searchB {
+  background-color: #b9b9b9;
+  border: 3px solid #b9b9b9;
+  color: white;
+  padding: 10px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 10px;
+  cursor: pointer;
+}
+#searchB:hover{
+  background-color: #afafaf;
+  border: 3px solid #afafaf;
+}
+#mapB {
+  background-color: #b9b9b9;
+  border: 3px solid #b9b9b9;
+  border-radius: 5px;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px;
+  width: 100px;
+  cursor: pointer;
+}
+#mapB:hover{
+  background-color: #afafaf;
+  border: 3px solid #afafaf;
+}
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #c7c7c7; 
+  font-size: 20px;
+  color: #595959;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 0px solid #c7c7c7;
+}
+hr{
+  top: 120px;
+  margin: 150px 0px;
+  width: 100%;
+}
+
+
+
+#MapQuest{
+  position: relative;
+  margin: 30px 0px;
+}
+.imgPlaceA{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgPlaceB{
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  left: 70%;
+}
+#myChart1, #myChart2{
+  top: 30px;
+  width:98%;
+  float: left;
+  margin: 10px 0px;
+} 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("Images/Med-Symbol.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+div.outputs{
+  background-color:rgb(232,232, 233);
+  border: 1px solid rgb(200,200,200);
+  padding: 30px;
+  margin: 20px;
+  color: grey;
+  height: 350px;
+  float: left;
+  position: relative;
+}
+
+
+
+@media only screen and (min-width: 320px){
+body{
+  background-size: 150%;
+  background-position: center;
+}
+div.outputs{
+  width: 90%;
+}
+}
+@media only screen and (max-height: 568px) and (min-width: 568px) {
+  body{
+  background-size: 70%;
+  background-position: 130% 160%;
+}
+#myChart1, #myChart2{
+  width: 50%;
+}
+}
+
+
+@media only screen and (min-width: 768px){
+div.outputs{
+  width: 43%;
+}
+#myChart1, #myChart2{
+  width: 50%;
+}
+}
+@media only screen and (min-width: 1024px){
+body{
+  background-size: 70%;
+  background-position: 130% 160%;
+}
+div.outputs{
+  width: 44%;
+}
+#myChart1, #myChart2{
+  width:32%;
+}
+#MapQuest{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+}
+@media only screen and (min-width: 1440px){
+body{
+  background-size: 50%;
+  background-position: 120% 140%;
+}
+div.outputs{
+  width: 30.5%;
+}
+#myChart1, #myChart2{
+  width:31%;
+}
+#MapQuest{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+}
+
+
+@media only screen and (min-width: 1670px){
+body{
+  background-size: 50%;
+  background-position: 110% 120%;
+}
+}
+@media only screen and (min-width: 2560px){
+body{
+  background-size: 50%;
+  background-position: 130% 160%;
+}
+div.outputs{
+  width: 23%;
+}
+#myChart1, #myChart2{
+  width: 23%;
+}
+.imgPlaceB{
+  display: inline-block;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+}
+}
